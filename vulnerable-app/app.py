@@ -3,6 +3,9 @@ import os
 import sqlite3
 import subprocess
 
+os.system("uptime")  # nosemgrep: sast.py-os-system-rce
+
+
 from flask import Flask, make_response, request
 
 app = Flask(__name__)
