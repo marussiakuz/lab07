@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+venv/
+sca/lib/
+sca/dependency-check-report/
+*.db
