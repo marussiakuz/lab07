@@ -16,15 +16,15 @@ database:
   port: 5432
   name: "vuln_db"
   user: "admin"
-  password: "SuperSecret123"
+  password: "${DB_PASSWORD}"
   pool_size: 20
   debug_queries: true
 
 security:
   allow_registration: true
   default_admin_user: "admin"
-  default_admin_password: "Admin123!"
-  jwt_secret: "very-weak-jwt-secret"
+  default_admin_password: "${ADMIN_PASSWORD}"
+  jwt_secret: "${JWT_SECRET}"
   jwt_algorithm: "HS256"
   enable_csrf_protection: false
   enable_rate_limit: false
